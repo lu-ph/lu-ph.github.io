@@ -82,7 +82,7 @@
         </div>
     </nav>
     <div class="content">
-        <h1 class="content-title">Emoji语句生成器</h1>
+        <h2 class="content-title">想说的东西难以开口？把它翻译成Emoji!</h2>
         <input type="text" id="inputText" placeholder="输入一段话...">
         <button class="rounded-button" id="generateButton">生成</button>
         <div class="result" id="emojiResult"></div>
@@ -109,7 +109,6 @@
                 return;
             }
 
-            // DeepSeek API 的实际 URL
             const apiUrl = 'https://api.deepseek.com/v1/chat/completions';
             var systemPrompt = `
             你是一个能够将文本转换为emoji表达的助手。请根据以下提供的句子和对应的emoji翻译，学习并应用相同的规则来翻译新的句子。
