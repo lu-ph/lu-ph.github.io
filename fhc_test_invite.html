@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FHC test invite</title>
+  <style>
+    body {
+      font-family: '微软雅黑', Arial, sans-serif;
+      background: #e9e9e9;
+      margin: 0;
+      padding: 0;
+    }
+    .invite-container {
+      max-width: 600px;
+      min-height: 500px;
+      margin: 40px auto;
+      background: #fffdf6;
+      border-radius: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      padding: 48px 36px 36px 36px;
+      text-align: left;
+    }
+    .invite-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 18px;
+      color: #333;
+    }
+    .invite-image {
+      display: block;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .invite-image img {
+      max-width: 180px;
+      border-radius: 0;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    .invite-content {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+    .invite-footer {
+      color: #888;
+      font-size: 0.95rem;
+      margin-top: 18px;
+    }
+    .invite-btn {
+      display: inline-block;
+      margin-top: 32px;
+      padding: 12px 32px;
+      font-size: 1.1rem;
+      color: #fff;
+      background: #ffb300;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: background 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 8px rgba(255,179,0,0.08);
+    }
+    .invite-btn:hover {
+      background: #ffa000;
+      box-shadow: 0 4px 16px rgba(255,179,0,0.15);
+    }
+    @media (max-width: 700px) {
+      body {
+        background: #fffdf6;
+      }
+      .invite-container {
+        box-shadow: none;
+        border: none;
+      }
+      .invite-content img {
+        max-width: 100%;
+        padding-left: 2vw;
+        padding-right: 2vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="invite-container">
+    <div class="invite-title"></div>
+    <div class="invite-image">
+    </div>
+    <div class="invite-content">
+      批改功課是否是一項枯燥繁瑣的工作？<br><br>
+
+      我想解決這個問題，寫了一個玩具，它可以幫你方便地部署、分發、自動批改功課，統計學生的功課數據，以及讓學生線上做題、立刻反饋、就題目與AI互動。<br><br>
+
+      我想邀請老師幫我測試這個小玩具，我想讓它變得真正好用。学生的小玩具，能否變成老师的趁手工具，需要你們的實際體驗，反饋。<br><br>
+
+      你們給學生發佈一次小測、試卷、或者較長的booklet都可以，科目題材不限。
+    </div>
+    <button class="invite-btn" onclick="window.location.href='http://221.12.72.203:5173'">開始</button><br><br>
+    <button class="invite-btn" onclick="window.location.href='/fhc_guidance.html'">指引</button>
+  </div>
+</body>
+</html>
